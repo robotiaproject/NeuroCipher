@@ -1,0 +1,239 @@
+/* Estilos generales para toda la página */
+@import url('https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap');
+
+:root {
+    --cor-fundo: #F3F5FC;
+    --cor-azul-escuro: #0A3871;
+    --cor-branco: #ffffff;
+    --cor-cinza-claro: #D8DFE8;
+    --cor-cinza-escuro: #574949;
+    --cor-laranja: #FF8E2B;
+    --cor-verde: #1B9C85;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background-color: var(--cor-fundo);
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+.cabecalho-principal {
+    padding: 1%;
+}
+
+.conteudo-principal {
+    width: 100vw;
+    height: 90vh;
+    margin-right: 8%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.area-esquerda {
+    margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 1.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-texto {
+    width: 50vw;
+    height: 100%;
+    font-size: 25px;
+    font-weight: 400;
+    background-color: var(--cor-fundo);
+    color: var(--cor-azul-escuro);
+    resize: none;
+    border: none;
+    outline: none;
+}
+
+.caixa-texto::placeholder {
+    color: var(--cor-azul-escuro);
+}
+
+.caixa-texto::-webkit-scrollbar {
+    width: 8px;
+}
+
+.caixa-texto::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul-escuro);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.caixa-texto::-webkit-scrollbar-track {
+    background-color: var(--cor-fundo);
+}
+
+.regras-texto {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: default;
+}
+
+.regras-texto img {
+    width: 20px;
+    margin-left: 4px;
+}
+
+.regras-texto p {
+    font-size: 15px;
+    color: var(--cor-cinza-escuro);
+    transition: 0.5s;
+}
+
+.botoes-acao {
+    display: flex;
+    gap: 15px;
+}
+
+.botoes-acao button {
+    width: 100%;
+    padding: 18px;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.botao-criptografar {
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
+    border: none;
+}
+
+.botao-criptografar:hover {
+    background-color: #0f50a0;
+}
+
+.botao-descriptografar {
+    border: 1.5px var(--cor-azul-escuro) solid;
+    background-color: var(--cor-cinza-claro);
+    color: var(--cor-azul-escuro)
+}
+
+.botao-descriptografar:hover {
+    border: 1.5px #1455a5 solid;
+    background-color: #f5f2f2;
+}
+
+.area-direita {
+    width: 25%;
+    margin: 2%;
+    padding: 1.3% 1.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--cor-branco);
+    border-radius: 25px;
+    box-shadow: 0 0 10px #0000001e;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+.area-direita::-webkit-scrollbar {
+    width: 8px;
+}
+
+.area-direita::-webkit-scrollbar-thumb {
+    background-color: var(--cor-azul-escuro);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.area-direita::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.texto-resultado {
+    display: none;
+    width: 100%;
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 15%;
+}
+
+.elementos-resultado {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    margin-top: 40%;
+}
+
+.elementos-resultado img {
+    width: 70%;
+}
+
+.mensagem-resultado {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 90%;
+    text-align: center;
+    cursor: default;
+}
+
+.mensagem-resultado h2 {
+    font-size: 23px;
+    font-weight: 500;
+}
+
+.mensagem-resultado p {
+    font-size: 15px;
+}
+
+.copiar-resultado {
+    display: none;
+    width: 100%;
+    padding: 18px 0;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    border: 1.5px var(--cor-azul-escuro) solid;
+    background-color: var(--cor-branco);
+    color: var(--cor-azul-escuro);
+}
+
+.copiar-resultado:hover {
+    border: 1.5px #1356a8 solid;
+    background-color: var(--cor-azul-escuro);
+    color: var(--cor-branco);
+}
+
+.rodape-principal {
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    font-size: 1.15rem;
+    color: var(--cor-branco);
+    font-style: normal;
+    background-color: var(--cor-azul-escuro);
+    padding: 10px;
+}
+
+.rodape-principal h4 {
+    margin: 0;
+}

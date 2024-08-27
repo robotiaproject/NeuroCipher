@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/responsive.css">
+    <link rel="fav icon" href="./assets/png/closed-lock.png">
+    <script src = "script.js" defer></script>
+    <title>NeuroCipher</title>
+</head>
+<body>
+    <header class="cabecalho-principal">
+        <a href="https://www.alura.com.br/" target="_blank">
+            <img src="assets/alura.png" alt="logo alura"/>
+        </a>
+    </header>
+    
+    <main class="conteudo-principal">
+        <section class="area-esquerda">
+            <textarea class="caixa-texto" required="" placeholder="Digite seu texto"></textarea>
+            <div class="regras-texto">
+                <img src="./assets/svg/info.svg" alt="">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="botoes-acao">
+                <button class="botao-criptografar">Criptografar</button>
+                <button class="botao-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+        <section class="area-direita">
+            <p class="texto-resultado"></p>
+            <div class="elementos-resultado">
+                <img src="assets/personagem.png" alt="">
+                <div class="mensagem-resultado">
+                    <h2>Nenhuma mensagem encontrada</h2>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                </div>      
+            </div>
+            <button class="copiar-resultado">Copiar</button>
+        </section>
+    </main>
+
+    <footer class="rodape-principal">
+        <h4>Desenvolido por: Pável Alberto Montilla Mendoza | 2024</h4>
+    </footer>
+
+</body>
+</html>
